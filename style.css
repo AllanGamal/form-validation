@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "roboto", "sans-serif";
+  font-weight: lighter;
+  font-size: 150%;
+  letter-spacing: 1px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 45rem;
+  background-color: #fff;
+  -webkit-box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.13);
+          box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.13);
+  margin-top: 15rem;
+  border-radius: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 7rem (10rem)[4] 7rem;
+      grid-template-rows: 7rem repeat(4, 10rem) 7rem;
+  grid-gap: 2rem;
+  padding: 3rem;
+}
+
+.container * * {
+  margin: 0.2rem;
+}
+
+.container__title {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff7043;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.container__title h1 {
+  font-weight: bolder;
+}
+
+.container h3 {
+  font-weight: lighter;
+  color: rgba(99, 99, 99, 0.664);
+}
+
+.container input {
+  font-size: 1.8rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.185);
+  font-size: 110%;
+}
+
+.container button {
+  height: 5rem;
+  color: white;
+  background-color: #ff7043;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0;
+  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.212);
+          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.212);
+  font-size: 150%;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.container button:hover {
+  -webkit-box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.301);
+          box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.301);
+  background-color: #ff5722;
+}
+
+.container button:active {
+  -webkit-box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.212);
+          box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.212);
+  background-color: #ff7043;
+}
+
+.container small {
+  display: none;
+  color: #e73b07;
+}
+
+.container .success input {
+  border: 2px #4cda50 solid;
+}
+
+.container .error input {
+  border: 2px solid #ff5722;
+}
+
+.container .error small {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

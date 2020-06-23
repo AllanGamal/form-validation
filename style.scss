@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "roboto", "sans-serif";
+  font-weight: lighter;
+  font-size: 150%;
+  letter-spacing: 1px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 45rem;
+  background-color: #fff;
+  box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.13);
+  margin-top: 15rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem repeat(4, 10rem) 7rem;
+  grid-gap: 2rem;
+  padding: 3rem;
+
+  * {
+    * {
+      margin: 0.2rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7043;
+    color: white;
+    border-radius: 0.5rem;
+
+    h1 {
+      font-weight: bolder;
+    }
+  }
+
+  h3 {
+    font-weight: lighter;
+    color: rgba(99, 99, 99, 0.664);
+  }
+
+  input {
+    font-size: 1.8rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    color: black;
+    border: 1px solid rgba(128, 128, 128, 0.185);
+    font-size: 110%;
+  }
+
+  button {
+    height: 5rem;
+    color: white;
+    background-color: #ff7043;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.212);
+    font-size: 150%;
+    transition: all 0.1s;
+
+    &:hover {
+      box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.301);
+      background-color: #ff5722;
+    }
+
+    &:active {
+      box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.212);
+      background-color: #ff7043;
+    }
+  }
+
+  small {
+    display: none;
+    color: #e73b07;
+  }
+
+  .success {
+    input {
+      border: 2px #4cda50 solid;
+    }
+  }
+
+  .error {
+    input {
+      border: 2px solid #ff5722;
+    }
+    small {
+      display: block;
+    }
+  }
+}
